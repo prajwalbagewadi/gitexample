@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Animation</title>
+    <style>
+      div {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        animation-name: exam;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      @keyframes exam {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+      .img {
+        padding: 10px;
+        animation-name: img;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+      @keyframes img {
+        0% {
+          border-radius: 8px;
+          content: '<img class="img" src="./iron-man-marvel-superheroes-amoled-pitch-black-minimal-art-2048x2048-6293.png" alt="" width="200px" />';
+        }
+        100% {
+          border-radius: 50%;
+          content: '<img class="img" src="./pexels-photo-1671643.webp" alt="" width="200px" />';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Content</div>
+
+    <br />
+    <h1>Animation in Css</h1>
+    <ul>
+      <li>@keyframes: specifies animation-code</li>
+      <li>animation: set the animation property</li>
+      <li>animation-delay: delay at the start of animation</li>
+      <li>
+        animation-direction: animation should play forward or backward or
+        alternate cycles
+      </li>
+      <li>
+        animation-duration: specifies the time it takes to complete one
+        animation cycle
+      </li>
+      <li>
+        animation-iteration-count: specifies number of times animation should be
+        played
+      </li>
+      <li>animation-name: name of @keyframes animation</li>
+    </ul>
+  </body>
+</html>

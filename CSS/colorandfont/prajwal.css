@@ -1,0 +1,8 @@
+/*external css file*/
+#p1,
+#p2 {
+  background-color: black;
+  color: hsl(315, 98%, 50%);
+  font-family: Sacramento;
+  font-size: 25px;
+}

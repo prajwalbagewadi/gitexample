@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Masterclass</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Product Sans Medium;
+        line-height: 1;
+        background-color: #0f0f0f;
+        color: #f1f1f1;
+      }
+      .container {
+        border: 2px solid #f1f1f1;
+        background-color: #212121;
+        margin-bottom: 20px;
+        padding: 5px;
+      }
+      .flex-container {
+        /* height: 200px; */
+        display: flex; /*align items from left to right*/
+        min-height: 200px;
+        margin-bottom: 20px;
+      }
+      .circle {
+        border: 1px solid #f1f1f1;
+        background-color: red;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pastel-1 {
+        background-color: #ff0033;
+      }
+      .pastel-2 {
+        background-color: #ff006f;
+      }
+      .pastel-3 {
+        background-color: #e400a8;
+      }
+      .pastel-4 {
+        background-color: #ab45d7;
+      }
+      .pastel-5 {
+        background-color: #3966f2;
+      }
+      #c2 {
+        flex-direction: column;
+      }
+      #c3 {
+        justify-content: space-between;
+        /* justify-content: space-around;
+        justify-content: space-evenly; */
+      }
+      #c4 {
+        /* align-items: baseline; */
+        align-items: center;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: end; */
+      }
+      #c5 {
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+      }
+      #c6 {
+        /* align-content: space-between; */
+        align-content: space-around;
+        height: auto;
+        flex-wrap: wrap;
+      }
+      /*youtube shorts type scroll*/
+      .flex-container-scroll {
+        display: flex; /*align items from left to right*/
+        height: 200px;
+        gap: 20px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        max-width: 550px;
+      }
+      .square {
+        flex: 0 0 250px;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 5px 15px;
+        display: flex;
+        scroll-snap-align: start;
+      }
+      .flex-container-scroll::-webkit-scrollbar {
+        height: 8px;
+      }
+      .flex-container-scroll::-webkit-scrollbar-track {
+        background: #212121;
+        border-radius: 10px;
+      }
+      .flex-container-scroll::-webkit-scrollbar-thumb {
+        background: #e5e5e5;
+        border-radius: 10px;
+      }
+      .flex-container-scroll::-webkit-scrollbar-thumb:hover {
+        background: #e5e5e5;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Masterclass</h1>
+    <div class="container">
+      <h2>1) Default Flex (row)</h2>
+      <div class="flex-container">
+        <div class="circle pastel-1">1</div>
+        <div class="circle pastel-2">2</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+        <div class="circle pastel-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>2) Flex Direction:column</h2>
+      <div class="flex-container" id="c2">
+        <div class="circle pastel-1">1</div>
+        <div class="circle pastel-2">2</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+        <div class="circle pastel-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>3) justify-content: space-between</h2>
+      <div class="flex-container" id="c3">
+        <div class="circle pastel-1">1</div>
+        <div class="circle pastel-2">2</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+        <div class="circle pastel-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>4) align-items:center</h2>
+      <div class="flex-container" id="c4">
+        <div class="circle pastel-1">1</div>
+        <div class="circle pastel-2">2</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+        <div class="circle pastel-5">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>5) flex wrap:wrap</h2>
+      <div class="flex-container" id="c5">
+        <div class="circle pastel-1">1</div>
+        <div class="circle pastel-2">2</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+        <div class="circle pastel-5">5</div>
+        <div class="circle pastel-1">6</div>
+        <div class="circle pastel-2">7</div>
+        <div class="circle pastel-3">8</div>
+        <div class="circle pastel-4">9</div>
+        <div class="circle pastel-5">10</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>6) align content:Space-Around (with wrap)</h2>
+      <div class="flex-container" id="c6">
+        <div class="circle pastel-1">1</div>
+        <div class="circle pastel-2">2</div>
+        <div class="circle pastel-3">3</div>
+        <div class="circle pastel-4">4</div>
+        <div class="circle pastel-5">5</div>
+        <div class="circle pastel-1">6</div>
+        <div class="circle pastel-2">7</div>
+        <div class="circle pastel-3">8</div>
+        <div class="circle pastel-4">9</div>
+        <div class="circle pastel-5">10</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>7) order Property</h2>
+      <div class="flex-container">
+        <div class="circle pastel-1" style="order: 3">1</div>
+        <div class="circle pastel-2" style="order: 2">2</div>
+        <div class="circle pastel-3" style="order: 1">3</div>
+        <div class="circle pastel-4" style="order: 5">4</div>
+        <div class="circle pastel-5" style="order: 4">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>8) Flex Grow</h2>
+      <div class="flex-container">
+        <div class="circle pastel-1" style="flex-grow: 0">1</div>
+        <div class="circle pastel-2" style="flex-grow: 3">2</div>
+        <div class="circle pastel-3" style="flex-grow: 0">3</div>
+        <div class="circle pastel-4" style="flex-grow: 0">4</div>
+        <div class="circle pastel-5" style="flex-grow: 0">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>9) Align self</h2>
+      <div class="flex-container">
+        <div class="circle pastel-1" style="align-self: baseline">1</div>
+        <div class="circle pastel-2" style="align-self: center">2</div>
+        <div class="circle pastel-3" style="align-self: flex-end">3</div>
+        <div class="circle pastel-4" style="align-self: stretch; height: auto">
+          4
+        </div>
+        <div class="circle pastel-5" style="align-self: normal">5</div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>10) Scroll</h2>
+      <ul class="flex-container-scroll">
+        <li class="square pastel-1">1</li>
+        <li class="square pastel-2">2</li>
+        <li class="square pastel-3">3</li>
+        <li class="square pastel-4">4</li>
+        <li class="square pastel-5">5</li>
+        <li class="square pastel-1">6</li>
+        <li class="square pastel-2">7</li>
+        <li class="square pastel-3">8</li>
+        <li class="square pastel-4">9</li>
+        <li class="square pastel-5">10</li>
+        <li class="square pastel-1">11</li>
+        <li class="square pastel-2">12</li>
+        <li class="square pastel-3">13</li>
+        <li class="square pastel-4">14</li>
+        <li class="square pastel-5">15</li>
+        <li class="square pastel-5">16</li>
+        <li class="square pastel-1">17</li>
+        <li class="square pastel-2">18</li>
+        <li class="square pastel-3">19</li>
+        <li class="square pastel-4">20</li>
+        <li class="square pastel-5">21</li>
+      </ul>
+    </div>
+  </body>
+</html>

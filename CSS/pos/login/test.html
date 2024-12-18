@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1a1a1a;
+        /*flush browser margin and padding*/
+        margin: 0;
+        padding: 0;
+        /*100vh-viewport height -try with 0px and 400px*/
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: #8d8c8c;
+        /*for having the box curved corners*/
+        border-radius: 8px;
+        padding: 30px;
+        width: 300px;
+      }
+      h2 {
+        color: #034326;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: #c8c4c4;
+      }
+      button {
+        background-color: rgb(45, 5, 247);
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      /*change state based on state*/
+      button:hover {
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!--div.card-->
+    <div class="card">
+      <h2>Login</h2>
+      <form action="" method="">
+        <input type="email" name="email" id="" placeholder="Email" />
+        <input type="password" name="password" id="" placeholder="Password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

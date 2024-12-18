@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.img {
+  /*static positioning*/
+  position: static;
+
+  height: 200px;
+}
+.img1 {
+  position: static;
+  left: 500px;
+  height: 200px;
+}
+.img2 {
+  /*relative positioning
+  Relative positioning is the first position type we'll take a look at. This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. 
+  */
+  position: relative;
+  left: 50px;
+  height: 200px;
+}
+.img3 {
+  position: relative;
+  left: 60px;
+  height: 200px;
+}
+.img4 {
+  /*absolute*/
+  position: absolute;
+  right: 60px;
+  height: 200px;
+}
+.img5 {
+  position: absolute;
+  right: 150px;
+  height: 200px;
+}
+.img6 {
+  position: fixed;
+  bottom: 150px;
+  height: 200px;
+}
+.img7 {
+  position: sticky;
+  bottom: 80px;
+  height: 200px;
+}

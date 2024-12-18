@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Universal selector*/
+      * {
+        /*flush out settings*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /*type selector*/
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        /* margin: 1px 2px 3px 4px;
+        margin: 1px 2px 4px;
+        margin: 1px 4px; */
+        /* padding: 5px;
+        padding: 2px 3px;
+        padding: 1px 2px 4px;
+        padding: 1px 2px 3px 4px; */
+      }
+      /*class selector*/
+      .highlight {
+        background-color: #95ff00;
+      }
+      /*id selector*/
+      #header {
+        background-color: #000000;
+        color: #f90047;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      /*attribute selector*/
+      input[type="text"] {
+        border: 2px solid #0919ff;
+      }
+      /*Descendant selector*/
+      article p {
+        background-color: #494949;
+        color: #fff;
+        border: 1px solid black;
+      }
+      /*child selector*/
+      div > p {
+        font-style: italic;
+        color: #ff4400;
+      }
+      /*Adjacent sibling selector diff*/
+      h1 + p {
+        font-family: Sacramento;
+      }
+      /* general sibling selector*/
+      h2 ~ p {
+        font-family: Saucer BB;
+      }
+      /*pseudo-class selector*/
+      a:hover {
+        background-color: #000000;
+        color: #f90047;
+        font-family: Sacramento;
+      }
+      a:active {
+        background-color: #000000;
+        color: #f9f900;
+        font-family: Sacramento;
+      }
+      /*pesudo-element selector*/
+      p::first-letter {
+        font-size: 30px;
+        color: #610000;
+        font-weight: bold;
+      }
+      /*Grouping selector*/
+      h1,
+      h2,
+      h3 {
+        font-family: Saucer BB;
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">This is the header</header>
+    <h1>Main heading</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sequi
+      ducimus nostrum exercitationem, nam esse iusto rerum praesentium nesciunt
+      eligendi dolore alias reiciendis consequuntur doloremque officiis deleniti
+      laudantium quasi atque eveniet ipsa? Laboriosam, natus quos quae sapiente
+      labore pariatur explicabo?
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, beatae!
+    </p>
+    <p class="highlight">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sunt eius
+      voluptatum, facere ex incidunt sequi id sed nostrum accusamus?
+    </p>
+    <input type="text" placeholder="Enter text here" />
+    <article>
+      <p>
+        one para!!! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Praesentium veritatis modi, commodi placeat nam nisi explicabo cum
+        magni. Laboriosam recusandae labore obcaecati voluptatibus, temporibus
+        dolorem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut
+        voluptates minima mollitia aperiam, molestiae quisquam odio eius
+        inventore quia!
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          sequi?
+        </p>
+      </div>
+    </article>
+    <ul>
+      <li>direct child to list</li>
+      <li>
+        another child
+        <ul>
+          <li>not direct child to first ul decedent</li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <p>i am child</p>
+      <p>i am child</p>
+      <section>
+        <p>I am decedent</p>
+      </section>
+      <p>para 4 in the div.</p>
+    </div>
+    <h2>Sub heading</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perspiciatis
+      exercitationem minima, veritatis sint omnis?
+    </p>
+    <div>sibling to h2</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <a href="#">hover to see pesudo-element</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+      laudantium consequatur cupiditate itaque aspernatur illo totam nisi non
+      similique repellat error consequuntur, illum temporibus dignissimos!
+    </p>
+    <h3>heading 3</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo saepe quidem
+      tempora recusandae quod pariatur error at ipsam deserunt? Atque!
+    </p>
+  </body>
+</html>
