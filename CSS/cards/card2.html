@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./wallpaperflare.com_wallpaper.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Poppins", serif;
+      }
+      .container {
+        border: 2px solid #1a1a1a;
+        width: 250px;
+        height: 350px;
+        background: linear-gradient(
+          225deg,
+          hsla(205, 13%, 52%, 1) 30%,
+          hsla(210, 5%, 8%, 1) 100%
+        );
+        border-radius: 8px;
+        box-shadow: 31px -16px 119px -27px rgba(116, 135, 149, 1);
+        /*
+        animation-name: wave;
+        animation-timing-function: ease-in-out;
+        animation-duration: 15s;
+        animation-delay: 2ms;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        */
+      }
+      @keyframes wave {
+        0% {
+          background: linear-gradient(
+            225deg,
+            hsla(205, 13%, 52%, 1) 20%,
+            hsla(210, 5%, 8%, 1) 100%
+          );
+        }
+        25% {
+          background: linear-gradient(
+            225deg,
+            hsla(205, 13%, 52%, 1) 40%,
+            hsla(210, 5%, 8%, 1) 100%
+          );
+        }
+        50% {
+          background: linear-gradient(
+            225deg,
+            hsla(205, 13%, 52%, 1) 50%,
+            hsla(210, 5%, 8%, 1) 100%
+          );
+        }
+        75% {
+          background: linear-gradient(
+            225deg,
+            hsla(205, 13%, 52%, 1) 70%,
+            hsla(210, 5%, 8%, 1) 100%
+          );
+        }
+        100% {
+          background: linear-gradient(
+            225deg,
+            hsla(205, 13%, 52%, 1) 60%,
+            hsla(210, 5%, 8%, 1) 100%
+          );
+        }
+      }
+      .image {
+        width: 100%;
+        height: 50%;
+      }
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .text {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        height: 20%;
+      }
+      .button {
+        margin-top: 15px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      .button a {
+        width: 50%;
+        /*height: 100%;*/
+        /*border: 1px solid #ffffff;*/
+        text-decoration: none;
+        background-color: #024daf;
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="./61kdBDtrstL._SX522_-removebg-preview.png" alt="" />
+      </div>
+      <div class="text">
+        <h5>
+          Hot Wheels 1:64 Scale 96 Porsche Carrera HW The 90S for Ages 3 and Up
+          by Small CLAP (White)
+        </h5>
+      </div>
+      <div class="button">
+        <a href="#">Add to Cart</a>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </body>
+</html>

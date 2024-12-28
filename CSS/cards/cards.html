@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        /* border: 2px solid red; */
+        margin: 0;
+        padding: 0;
+        background-image: url(./pexels-derice-jason-fahnkow-745824-1595244.jpg);
+        background-size: cover; /* Scales the image to cover the entire viewport */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image in the viewport */
+        height: 100vh; /* Sets the height of the body to the full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", serif;
+      }
+      /* .border {
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        padding: 5px;
+        background-image: linear-gradient(75deg, #0eea69, #1a1a1a, #0eea69);
+      } */
+      .container {
+        border: 4px solid transparent;
+        box-shadow: 9px 7px 40px -6px rgba(161, 161, 161, 0.25);
+        /* border-image: linear-gradient(210deg, #0eea69, #1a1a1a); */
+        /* display: flex; */
+        /* padding: 10px; */
+        justify-content: center;
+        border-radius: 8px;
+        background-color: transparent;
+        width: 250px;
+        height: 350px;
+        overflow: hidden;
+        background: linear-gradient(210deg, #0eea69, #1a1a1a);
+        animation-name: wave;
+        animation-timing-function: ease-in-out;
+        animation-duration: 25s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      /* @keyframes wave {
+        0% {
+          background: linear-gradient(210deg, #0eea69, #000000);
+        }
+        10% {
+          background: linear-gradient(220deg, #0eea69, #000000);
+        }
+        20% {
+          background: linear-gradient(230deg, #0eea69, #000000);
+        }
+        30% {
+          background: linear-gradient(240deg, #0eea69, #000000);
+        }
+        50% {
+          background: linear-gradient(250deg, #0eea69, #000000);
+        }
+        60% {
+          background: linear-gradient(260deg, #0eea69, #000000);
+        }
+        70% {
+          background: linear-gradient(280deg, #0eea69, #000000);
+        }
+        80% {
+          background: linear-gradient(290deg, #0eea69, #000000);
+        }
+        90% {
+          background: linear-gradient(300deg, #0eea69, #000000);
+        }
+        100% {
+          background: linear-gradient(210deg, #0eea69, #000000);
+        }
+      } */
+      .img {
+        background-color: aliceblue;
+        border-radius: inherit;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+      }
+      .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .text {
+        /* display: flex; */
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        color: aliceblue;
+        height: 30%;
+      }
+      .btn {
+        display: flex; /* Use Flexbox */
+        justify-content: center;
+        flex-direction: row; /* Stack links vertically */
+        gap: 10px; /* Space between links */
+      }
+      .btn a {
+        border: 3px solid transparent;
+        padding: 10px;
+        background-color: #024daf;
+        color: #ffffff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 10px;
+        display: flex;
+        gap: 15px;
+      }
+      .btnborder {
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, green, lightgreen);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <div class="container">
+        <div class="img">
+          <img src="./81tEJ0HH+xL._SX466_.jpg" alt="" srcset="" />
+        </div>
+        <div class="text">
+          <h5>
+            Canon EOS 1500D 24.1MP Digital SLR Camera (Black) With EF S18-55 IS
+            II Lens - Wi-Fi / NFC Supported
+          </h5>
+        </div>
+        <div class="btn">
+          <a href="#" class="btnborder">ADD TO CART</a>
+          <a href="#" class="btnborder">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
